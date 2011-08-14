@@ -1,2 +1,2 @@
-require './grinder'
+require 'grinder'
 run Sinatra::Application

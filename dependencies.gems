@@ -1,0 +1,5 @@
+source 'http://rubygems.org'
+gem 'sinatra' --version 1.2.6
+gem 'erb'
+gem 'dm-core'
+gem 'dm-migrations'

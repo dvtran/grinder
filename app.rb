@@ -28,7 +28,7 @@ require 'oa-oauth'
 %w(rubygems oa-oauth dm-core dm-sqlite-adapter dm-migrations sinatra).each { |dependency| require dependency }
 
 configure :production do
-  DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+  DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/database.db")
 end
 
 

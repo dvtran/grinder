@@ -1,0 +1,27 @@
+<h3>New Quest</h3>
+<form action = "/home" method = "post">   
+  <textarea name="todo"></textarea>
+  <textarea name="xp"></textarea>
+  <input type="submit" value="submit" />
+</form> 
+
+
+
+<h3>Your Quests</h3>
+
+<table>
+  <tr>
+    <th>Quest</th>
+    <th>XP</th>
+    <th>Completed?</th>
+  </tr>
+<% @quests.each do |quest| %> 
+  <tr>
+    <td><p class = "todo"><%=escape quest.todo %></p></td>
+    <td><h3 class = "xp"><%= quest.xp %></h3></td>
+    <td><a href="/done/<%= quest.id %>" class = "done"><button>done!</button></a></td>
+  </tr>
+<% end %>
+</table>
+
+<a href="/completed">completed quests</a>

@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+
+
+
+h1 {
+  color: #333333;
+  font-family: ‘Arial Black’, Gadget, sans-serif;
+  font-size: 42pt;
+}
+
+h3 {
+  color: #333333;
+  font-family: ‘Arial Black’, Gadget, sans-serif; 
+  font-size: 22pt;
+}
+
+h4 {
+  color: #333333;
+  font-family: ‘Courier New’, Courier, monospace; 
+  font-size: 22pt;
+}
+
+body {
+  height: 100%;
+  
+  color: #333333;
+  font-family: ‘Courier New’, Courier, monospace;
+  font-size: 11pt;
+
+  width:640px;
+	margin:0px auto;
+	text-align:left;
+
+	
+}
+
+.xp {
+  color: #333333;
+  font-family: ‘Arial Black’, Gadget, sans-serif; 
+  font-size: 11pt;
+  
+  width: 100px;
+  margin:0px auto;
+  text-align:left; 
+}
+
+.todo {
+  color: #333333;
+  font-family: ‘Courier New’, Courier, monospace; 
+  font-size: 11pt;
+  
+  width: 500px;
+  margin:0px auto;
+  text-align:left; 
+}
+
+.checkbox {
+  width: 40px;
+  text-align:left; 
+  height: 40px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -10px;
+  *overflow: hidden;
+
+}
+
+.footer, .push {
+  width:640px;
+  height: 142px;
+  margin:0px auto;
+	
+}

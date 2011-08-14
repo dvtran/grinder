@@ -1,0 +1,14 @@
+<h3>Completed quests</h3>
+
+<table>
+  <tr>
+    <th>Quest</th>
+    <th>XP Earned</th>
+  </tr>
+<% @completed_quests.each do |quest| %> 
+  <tr>
+    <td><p class = "todo"><%=escape quest.todo %></p></td>
+    <td><h3 class = "xp"><%= quest.xp %></h3></td>
+  </tr>
+<% end %>
+</table>

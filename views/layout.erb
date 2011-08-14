@@ -1,0 +1,29 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+  <meta charset="utf8">  
+  <title>LifeGrinder - LevelUp!</title>  
+  <link href="/reset.css" rel="stylesheet"> 
+  <link href="/style.css" rel="stylesheet">  
+</head>  
+<body>  
+  <header>  
+    <hgroup>  
+      <h1><a href="/">LifeGrinder</a></h1>    
+    </hgroup>  
+  </header>  
+  
+  <div id="main">  
+    <p>Hello <%= @user %>!</p>
+    <a href="/logout">logout (and come back soon!)</a>
+    <p>Experience: <%= @user_xp %></p>
+    <%= yield %>
+    
+  <div class="push"></div>
+  </div>  
+  
+  <footer>  
+    <p><small>by dandeeman</small></p>  
+  </footer>  
+</body>  
+</html>

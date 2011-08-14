@@ -23,7 +23,9 @@ require 'dm-migrations'
 
 %w(rubygems oa-oauth dm-core dm-sqlite-adapter dm-migrations sinatra).each { |dependency| require dependency }
 
-DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/database.db")
+DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
+# this one is the development database
+# DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/database.db")
 
 class User
   include DataMapper::Resource

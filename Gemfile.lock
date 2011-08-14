@@ -3,9 +3,7 @@ GEM
   specs:
     addressable (2.2.6)
     bcrypt-ruby (2.1.4-x86-mingw32)
-    data_objects (0.10.6)
-      addressable (~> 2.1)
-    datamapper (1.1.0)
+    data_mapper (1.1.0)
       dm-aggregates (= 1.1.0)
       dm-constraints (= 1.1.0)
       dm-core (= 1.1.0)
@@ -15,6 +13,8 @@ GEM
       dm-transactions (= 1.1.0)
       dm-types (= 1.1.0)
       dm-validations (= 1.1.0)
+    data_objects (0.10.6)
+      addressable (~> 2.1)
     dm-aggregates (1.1.0)
       dm-core (~> 1.1.0)
     dm-constraints (1.1.0)
@@ -26,6 +26,9 @@ GEM
       dm-core (~> 1.1.0)
     dm-migrations (1.1.0)
       dm-core (~> 1.1.0)
+    dm-postgres-adapter (1.1.0)
+      dm-do-adapter (~> 1.1.0)
+      do_postgres (~> 0.10.2)
     dm-serializer (1.1.0)
       dm-core (~> 1.1.0)
       fastercsv (~> 1.5.4)
@@ -46,6 +49,8 @@ GEM
       uuidtools (~> 2.1.2)
     dm-validations (1.1.0)
       dm-core (~> 1.1.0)
+    do_postgres (0.10.6-x86-mingw32)
+      data_objects (= 0.10.6)
     do_sqlite3 (0.10.6-x86-mingw32)
       data_objects (= 0.10.6)
     faraday (0.6.1)
@@ -81,9 +86,10 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  datamapper
+  data_mapper
   dm-core (= 1.1.0)
   dm-migrations (= 1.1.0)
+  dm-postgres-adapter
   dm-sqlite-adapter (= 1.1.0)
   oa-oauth (= 0.2.6)
   sinatra (= 1.2.6)

@@ -15,6 +15,7 @@
 # https://github.com/charliepark/omniauth-for-sinatra/tree/abec8d13f58e7b531ef00f531ace3e2d50a46f29
 # 
 
+require 'rubygems'
 require 'sinatra'
 require 'erb'
 require 'dm-core'

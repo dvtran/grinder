@@ -1,0 +1,11 @@
+These are the project files for Grinder, a web app written in ruby/sinatra
+
+How grinder works:
+1. Create quest
+2. Assign xp
+3. Submit
+4. Finish quest
+5. ???
+6. Gain xp
+7. Profit!
+8. Back to step 1

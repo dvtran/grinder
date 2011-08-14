@@ -16,11 +16,14 @@
 # 
 
 require 'rubygems'
+require "bundler/setup"
+
 require 'sinatra'
 require 'erb'
 require 'dm-core'
+require 'dm-sqlite-adapter'
 require 'dm-migrations'
-
+require 'oa-oauth'
 
 %w(rubygems oa-oauth dm-core dm-sqlite-adapter dm-migrations sinatra).each { |dependency| require dependency }
 
